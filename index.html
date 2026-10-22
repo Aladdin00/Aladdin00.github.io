@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ali Eldin Shaker | Data & BI Analyst</title>
+<meta name="description" content="Portfolio of Ali Eldin Mohamed Shaker, a Business Information Systems graduate seeking Data Analyst, BI Analyst and Reporting Analyst roles.">
+<meta property="og:title" content="Ali Eldin Shaker | Data & BI Analyst">
+<meta property="og:description" content="Dashboards, reports and data analysis projects by a Business Information Systems graduate.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF; --alt:#F5F7FA; --ink:#0F1B2D; --muted:#566275; --line:#E1E6ED;
+  --brand:#14365D; --accent:#1F6FEB; --on-brand:#FFFFFF;
+  --sans:"Inter","Segoe UI",Helvetica,Arial,sans-serif;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1521; --alt:#121D2D; --ink:#E9EEF5; --muted:#9AA8BA; --line:#223148;
+    --brand:#1B3A63; --accent:#6EA8FF; --on-brand:#FFFFFF; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1521; --alt:#121D2D; --ink:#E9EEF5; --muted:#9AA8BA; --line:#223148;
+  --brand:#1B3A63; --accent:#6EA8FF; --on-brand:#FFFFFF; color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font:700 17px var(--sans);color:var(--ink);text-decoration:none}
+nav{display:flex;align-items:center;gap:26px}
+nav a{color:var(--muted);text-decoration:none;font-size:15px;font-weight:500}
+nav a:hover{color:var(--ink)}
+nav a.cta{color:var(--on-brand);background:var(--brand);padding:8px 16px;border-radius:6px}
+nav a.cta:hover{color:var(--on-brand);filter:brightness(1.15)}
+
+/* hero */
+.hero{padding:88px 0 72px;background:var(--alt);border-bottom:1px solid var(--line)}
+.hero h1{font:700 clamp(38px,6vw,60px)/1.08 var(--serif);letter-spacing:-.01em;margin:0 0 14px;max-width:16ch}
+.hero .role{font:600 19px var(--sans);color:var(--accent);margin:0 0 18px}
+.hero .lede{font-size:19px;color:var(--muted);max-width:58ch;margin:0 0 32px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 24px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid var(--brand);transition:filter .15s}
+.btn.primary{background:var(--brand);color:var(--on-brand)}
+.btn.ghost{color:var(--ink);border-color:var(--line);background:var(--bg)}
+.btn.primary:hover,.btn.ghost:hover{filter:brightness(1.12)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;margin-top:56px;border-top:1px solid var(--line)}
+.facts div{padding:20px 24px 0 0}
+.facts dt{font-size:13px;color:var(--muted);margin:0 0 2px}
+.facts dd{margin:0;font-weight:600}
+.facts{margin-bottom:0}
+dl{margin:0}
+
+/* sections */
+section{padding:80px 0}
+section.alt{background:var(--alt);border-block:1px solid var(--line)}
+h2{font:700 32px/1.2 var(--serif);margin:0 0 10px}
+.sub{color:var(--muted);margin:0 0 40px;max-width:62ch}
+
+/* projects */
+.projects{display:grid;gap:24px}
+.project{display:grid;grid-template-columns:260px 1fr;background:var(--bg);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.thumb{background:var(--alt);border-right:1px solid var(--line);min-height:190px}
+.thumb svg{width:100%;height:100%;display:block}
+.f-card{fill:var(--bg);stroke:var(--line)}.f-a{fill:var(--accent)}.f-l{fill:var(--line)}.f-m{fill:var(--muted);opacity:.5}
+.s-a{stroke:var(--accent);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}.s-d{stroke:var(--muted);fill:none;stroke-width:1.5;stroke-dasharray:3 3}
+.project .body{padding:28px 32px}
+.project h3{font:700 21px/1.3 var(--sans);margin:0 0 6px}
+.project .tools{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;padding:0;list-style:none}
+.project .tools li{font-size:13px;font-weight:500;color:var(--brand);background:var(--alt);border:1px solid var(--line);padding:2px 10px;border-radius:99px}
+:root[data-theme="dark"] .project .tools li{color:var(--accent)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .project .tools li{color:var(--accent)}}
+.project dl{display:grid;gap:12px;margin-bottom:18px}
+.project dt{font-weight:600;font-size:14px}
+.project dd{margin:0;color:var(--muted);font-size:15px}
+.project .links{display:flex;gap:18px;font-weight:600;font-size:15px}
+.project .links a{display:inline-flex;align-items:center;gap:6px}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.skills div{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:24px}
+.skills h3{font:600 16px var(--sans);margin:0 0 12px}
+.skills ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;color:var(--muted);font-size:15px}
+
+/* about */
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:56px}
+.about p{margin:0 0 16px;color:var(--muted)}
+.edu{border-left:3px solid var(--accent);padding-left:20px}
+.edu h3{font:600 16px var(--sans);margin:0 0 4px}
+.edu p{margin:0}
+
+/* contact */
+.contact-box{background:var(--brand);color:var(--on-brand);border-radius:12px;padding:56px 48px}
+.contact-box h2{color:var(--on-brand)}
+.contact-box p{color:#C9D6E8;margin:0 0 28px;max-width:54ch}
+.contact-box .btn.primary{background:#FFFFFF;color:#14365D;border-color:#FFFFFF}
+.contact-box .btn.ghost{background:transparent;color:#FFFFFF;border-color:#7F9AC0}
+
+footer{padding:32px 0 48px;color:var(--muted);font-size:14px;text-align:center}
+
+@media (max-width:760px){
+  nav a:not(.cta){display:none}
+  .hero{padding:56px 0 48px}
+  section{padding:56px 0}
+  .project{grid-template-columns:1fr}
+  .thumb{border-right:0;border-bottom:1px solid var(--line);min-height:120px}
+  .project .body{padding:22px}
+  .about{grid-template-columns:1fr;gap:32px}
+  .contact-box{padding:36px 24px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Ali Eldin Shaker</a>
+    <nav aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a class="cta" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Ali Eldin Mohamed Shaker</h1>
+      <p class="role">Data Analyst | BI Analyst | Reporting Analyst</p>
+      <p class="lede">I turn raw data into clear reports and dashboards that help teams make better decisions. I hold a degree in Business Information Systems.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn ghost" href="https://github.com/Aladdin00" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/alieldin190" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <dl class="facts">
+        <div><dt>Education</dt><dd>B.Sc. Business Information Systems</dd></div>
+        <div><dt>Seeking</dt><dd>Data, BI and Reporting Analyst roles</dd></div>
+        <div><dt>Core tools</dt><dd>SQL Server, Power BI, Tableau, Excel, Python</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Selected projects</h2>
+      <p class="sub">Five projects covering SQL, Power BI, Tableau and Python. Each one links to its full code on GitHub.</p>
+      <div class="projects">
+        <article class="project">
+          <div class="thumb"><svg viewBox="0 0 260 190" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a Power BI dashboard with KPI cards, a gauge, a donut chart and a bar chart">
+<rect class="f-card" x="12" y="12" width="52" height="44" rx="5"/><rect class="f-l" x="20" y="21" width="24" height="5" rx="2"/><rect class="f-a" x="20" y="33" width="32" height="12" rx="2"/>
+<rect class="f-card" x="70" y="12" width="52" height="44" rx="5"/><rect class="f-l" x="78" y="21" width="24" height="5" rx="2"/><rect class="f-a" x="78" y="33" width="22" height="12" rx="2"/>
+<rect class="f-card" x="128" y="12" width="120" height="44" rx="5"/>
+<path d="M156 48 A24 24 0 0 1 204 48" fill="none" stroke="var(--line)" stroke-width="6" stroke-linecap="round"/>
+<path d="M156 48 A24 24 0 0 1 194.1 28.6" fill="none" stroke="var(--accent)" stroke-width="6" stroke-linecap="round"/>
+<rect class="f-card" x="12" y="66" width="100" height="112" rx="5"/>
+<g transform="rotate(-90 62 122)" fill="none" stroke-width="12"><circle cx="62" cy="122" r="26" stroke="var(--line)"/><circle cx="62" cy="122" r="26" stroke="var(--accent)" stroke-dasharray="78 163"/><circle cx="62" cy="122" r="26" stroke="var(--muted)" opacity=".5" stroke-dasharray="40 163" stroke-dashoffset="-80"/></g>
+<rect class="f-card" x="122" y="66" width="126" height="112" rx="5"/><rect class="f-a" x="136" y="82" width="92" height="11" rx="2" opacity="1"/><rect class="f-a" x="136" y="102" width="74" height="11" rx="2" opacity="0.85"/><rect class="f-a" x="136" y="122" width="56" height="11" rx="2" opacity="0.7"/><rect class="f-a" x="136" y="142" width="40" height="11" rx="2" opacity="0.55"/><rect class="f-a" x="136" y="162" width="26" height="11" rx="2" opacity="0.4"/>
+</svg></div>
+          <div class="body">
+            <h3>Data Professional Survey Dashboard</h3>
+            <ul class="tools"><li>Power BI</li><li>Excel</li></ul>
+            <dl>
+              <div><dt>Problem</dt><dd>Understand who works in data and how they feel about their careers, using a survey of data professionals.</dd></div>
+              <div><dt>Approach</dt><dd>Took the survey data from Excel (630 responses) and built a one-page Power BI dashboard with the number of respondents, average age, job titles, favorite programming language, difficulty of breaking into data, satisfaction with salary and work/life balance, and respondents by country.</dd></div>
+              <div><dt>Result</dt><dd>A dashboard that shows the profile of data professionals at a glance. For example, Python was the favorite language of about two thirds of respondents, and Data Analyst was the most common job title.</dd></div>
+            </dl>
+            <div class="links"><a href="https://github.com/Aladdin00/Data_Survey_Dashboard" target="_blank" rel="noopener">View on GitHub &rarr;</a></div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="thumb"><svg viewBox="0 0 260 190" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a dashboard with three KPI tiles, a bar chart and a line chart">
+<rect class="f-card" x="12" y="12" width="72" height="40" rx="5"/><rect class="f-l" x="22" y="21" width="30" height="5" rx="2"/><rect class="f-a" x="22" y="32" width="44" height="10" rx="2"/>
+<rect class="f-card" x="94" y="12" width="72" height="40" rx="5"/><rect class="f-l" x="104" y="21" width="30" height="5" rx="2"/><rect class="f-a" x="104" y="32" width="38" height="10" rx="2"/>
+<rect class="f-card" x="176" y="12" width="72" height="40" rx="5"/><rect class="f-l" x="186" y="21" width="30" height="5" rx="2"/><rect class="f-a" x="186" y="32" width="26" height="10" rx="2"/>
+<rect class="f-card" x="12" y="62" width="112" height="116" rx="5"/>
+<rect class="f-a" x="26" y="136" width="12" height="30" rx="2"/><rect class="f-a" x="44" y="114" width="12" height="52" rx="2"/><rect class="f-a" x="62" y="126" width="12" height="40" rx="2"/><rect class="f-a" x="80" y="96" width="12" height="70" rx="2"/><rect class="f-a" x="98" y="76" width="12" height="90" rx="2"/>
+<rect class="f-card" x="136" y="62" width="112" height="116" rx="5"/>
+<polyline class="s-a" points="150,152 172,138 194,144 218,106 238,82"/><circle class="f-a" cx="238" cy="82" r="4"/>
+</svg></div>
+          <div class="body">
+            <h3>COVID-19 Dashboard</h3>
+            <ul class="tools"><li>Tableau</li><li>SQL Server</li></ul>
+            <dl>
+              <div><dt>Problem</dt><dd>Show the global impact of COVID-19 in one view that anyone can read, without needing to look at raw tables.</dd></div>
+              <div><dt>Approach</dt><dd>Wrote SQL queries to prepare the cases and deaths data, then built four Tableau views into one dashboard: global totals and death percentage, deaths by continent, share of population infected by location, and infection trend over time.</dd></div>
+              <div><dt>Result</dt><dd>A single dashboard that shows how the pandemic affected each region and how infection rates changed over time.</dd></div>
+            </dl>
+            <div class="links"><a href="https://github.com/Aladdin00/Covid19_DashBoard" target="_blank" rel="noopener">View on GitHub &rarr;</a></div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="thumb"><svg viewBox="0 0 260 190" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of SQL code above a cumulative growth curve">
+<rect class="f-card" x="12" y="12" width="236" height="166" rx="6"/>
+<rect class="f-a" x="26" y="28" width="34" height="6" rx="2"/><rect class="f-l" x="66" y="28" width="96" height="6" rx="2"/>
+<rect class="f-l" x="40" y="42" width="120" height="6" rx="2"/>
+<rect class="f-a" x="26" y="56" width="26" height="6" rx="2"/><rect class="f-l" x="58" y="56" width="70" height="6" rx="2"/>
+<rect class="f-a" x="26" y="70" width="42" height="6" rx="2"/><rect class="f-l" x="74" y="70" width="110" height="6" rx="2"/>
+<rect class="f-a" x="26" y="84" width="30" height="6" rx="2"/><rect class="f-l" x="62" y="84" width="60" height="6" rx="2"/>
+<line class="s-d" x1="26" y1="164" x2="234" y2="164"/>
+<path class="s-a" d="M26 162 C90 160 130 148 160 130 S215 112 234 108"/><circle class="f-a" cx="234" cy="108" r="4"/>
+</svg></div>
+          <div class="body">
+            <h3>COVID-19 Data Exploration</h3>
+            <ul class="tools"><li>SQL Server</li><li>CTEs</li><li>Window functions</li></ul>
+            <dl>
+              <div><dt>Problem</dt><dd>Understand how COVID-19 spread and how vaccination progressed across countries and continents.</dd></div>
+              <div><dt>Approach</dt><dd>Queried the deaths and vaccinations tables with joins, CTEs, window functions, aggregates and data type conversions to calculate death percentage, infection rate by population and rolling vaccination totals.</dd></div>
+              <div><dt>Result</dt><dd>Ranked locations by infection rate and death count, and produced the query set that feeds the Tableau dashboard.</dd></div>
+            </dl>
+            <div class="links"><a href="https://github.com/Aladdin00/Covid_19_data_exploration" target="_blank" rel="noopener">View on GitHub &rarr;</a></div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="thumb"><svg viewBox="0 0 260 190" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a scatter plot with an upward regression line">
+<rect class="f-card" x="12" y="12" width="236" height="166" rx="6"/>
+<line class="s-d" x1="26" y1="164" x2="236" y2="164"/><line class="s-d" x1="26" y1="26" x2="26" y2="164"/>
+<circle class="f-a" cx="36" cy="150" r="4" opacity=".75"/><circle class="f-a" cx="52" cy="142" r="4" opacity=".75"/><circle class="f-a" cx="60" cy="152" r="4" opacity=".75"/><circle class="f-a" cx="76" cy="128" r="4" opacity=".75"/><circle class="f-a" cx="88" cy="138" r="4" opacity=".75"/><circle class="f-a" cx="100" cy="112" r="4" opacity=".75"/><circle class="f-a" cx="112" cy="124" r="4" opacity=".75"/><circle class="f-a" cx="126" cy="96" r="4" opacity=".75"/><circle class="f-a" cx="140" cy="110" r="4" opacity=".75"/><circle class="f-a" cx="152" cy="84" r="4" opacity=".75"/><circle class="f-a" cx="166" cy="98" r="4" opacity=".75"/><circle class="f-a" cx="180" cy="70" r="4" opacity=".75"/><circle class="f-a" cx="192" cy="84" r="4" opacity=".75"/><circle class="f-a" cx="206" cy="58" r="4" opacity=".75"/><circle class="f-a" cx="220" cy="66" r="4" opacity=".75"/><circle class="f-a" cx="232" cy="44" r="4" opacity=".75"/><line x1="30" y1="156" x2="238" y2="42" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round"/>
+</svg></div>
+          <div class="body">
+            <h3>Movie Correlation Analysis</h3>
+            <ul class="tools"><li>Python</li><li>pandas</li><li>seaborn</li><li>Matplotlib</li></ul>
+            <dl>
+              <div><dt>Problem</dt><dd>Find out which factors are most related to how much money a movie earns.</dd></div>
+              <div><dt>Approach</dt><dd>Cleaned the movies dataset with pandas (missing values, data types, release year), plotted budget against gross earnings, then built correlation matrices and heatmaps, including encoded categorical columns.</dd></div>
+              <div><dt>Result</dt><dd>Budget and votes showed the strongest relationship with gross earnings, while the production company showed little.</dd></div>
+            </dl>
+            <div class="links"><a href="https://github.com/Aladdin00/Movie_Correlation_Analysis" target="_blank" rel="noopener">View on GitHub &rarr;</a></div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="thumb"><svg viewBox="0 0 260 190" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a messy table becoming a clean table">
+<rect class="f-card" x="12" y="24" width="100" height="142" rx="6"/><rect class="f-m" x="22" y="34" width="60" height="8" rx="2"/><rect class="f-l" x="22" y="52" width="60" height="10" rx="2"/><rect class="f-l" x="22" y="72" width="38" height="10" rx="2"/><rect x="22" y="92" width="70" height="10" rx="2" fill="none" stroke="var(--muted)" stroke-dasharray="3 3"/><rect class="f-l" x="0" y="0" width="0" height="10" rx="2"/><rect class="f-l" x="22" y="112" width="50" height="10" rx="2"/><rect class="f-l" x="22" y="132" width="66" height="10" rx="2"/>
+<rect class="f-card" x="148" y="24" width="100" height="142" rx="6"/><rect class="f-a" x="158" y="34" width="80" height="8" rx="2"/><rect class="f-l" x="158" y="52" width="80" height="10" rx="2"/><rect class="f-a" x="158" y="52" width="8" height="10" rx="2"/><rect class="f-l" x="158" y="72" width="80" height="10" rx="2"/><rect class="f-a" x="158" y="72" width="8" height="10" rx="2"/><rect class="f-l" x="158" y="92" width="80" height="10" rx="2"/><rect class="f-a" x="158" y="92" width="8" height="10" rx="2"/><rect class="f-l" x="158" y="112" width="80" height="10" rx="2"/><rect class="f-a" x="158" y="112" width="8" height="10" rx="2"/><rect class="f-l" x="158" y="132" width="80" height="10" rx="2"/><rect class="f-a" x="158" y="132" width="8" height="10" rx="2"/>
+<path class="s-a" d="M120 95 H140 M133 88 L140 95 L133 102"/>
+</svg></div>
+          <div class="body">
+            <h3>Nashville Housing Data Cleaning</h3>
+            <ul class="tools"><li>SQL Server</li><li>T-SQL</li></ul>
+            <dl>
+              <div><dt>Problem</dt><dd>The raw housing data had inconsistent dates, missing addresses, combined address fields, mixed Y/N values and duplicates.</dd></div>
+              <div><dt>Approach</dt><dd>Standardized the sale date format, filled missing property addresses with a self-join on ParcelID, split addresses into street, city and state with SUBSTRING and PARSENAME, converted Y/N to Yes/No with CASE, found duplicates with a ROW_NUMBER CTE and dropped unused columns.</dd></div>
+              <div><dt>Result</dt><dd>A clean, consistent table that is ready for analysis.</dd></div>
+            </dl>
+            <div class="links"><a href="https://github.com/Aladdin00/Nashvillehousing_data_cleaning" target="_blank" rel="noopener">View on GitHub &rarr;</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="alt">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <p class="sub">The tools and methods I use from raw data to final report.</p>
+      <div class="skills">
+        <div><h3>Data analysis</h3><ul><li>SQL Server (T-SQL)</li><li>Excel</li><li>Python, pandas</li><li>Data cleaning and exploration</li></ul></div>
+        <div><h3>BI and reporting</h3><ul><li>Power BI</li><li>Tableau dashboards</li><li>seaborn and Matplotlib</li><li>Data storytelling</li></ul></div>
+        <div><h3>Business</h3><ul><li>Business information systems</li><li>Correlation analysis</li><li>Requirements gathering</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About me</h2>
+      <p class="sub">&nbsp;</p>
+      <div class="about">
+        <div>
+          <p>My degree in Business Information Systems combines business knowledge with technical skills. I can talk with the people who need answers and then build the analysis and reports that deliver them.</p>
+          <p>I am looking for a data analyst, BI analyst or reporting analyst role where I can keep growing and make data easy for everyone to understand.</p>
+        </div>
+        <div class="edu">
+          <h3>B.Sc. Business Information Systems</h3>
+          <p>Modern Academy, 2021 – 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="contact-box">
+        <h2>Let’s work together</h2>
+        <p>I’m open to data, BI and reporting roles. Send me a message and I’ll reply as soon as I can.</p>
+        <div class="btns">
+          <a class="btn primary" href="mailto:alyshaker2004@gmail.com">alyshaker2004@gmail.com</a>
+          <a class="btn ghost" href="https://github.com/Aladdin00" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/alieldin190" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Ali Eldin Mohamed Shaker</footer>
+</body>
+</html>
